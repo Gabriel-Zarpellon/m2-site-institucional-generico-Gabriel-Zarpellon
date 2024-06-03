@@ -4,34 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Institucional Genérica</title>
+    <link rel="stylesheet" href="/src/styles/globalStyles.css">
+    <script src="/src/scripts/index.js" defer></script>
   </head>
   <body>
     <!-- ====== Header ====== -->
-    <header>
-      <div>
-        <img src="" alt="" />
-        <button>Entrar para próxima turma</button>
+    <header id="header">
+      <div class="header__container">
+        <img class="header__logo"src="/src/assets/logo.svg" alt="Logo Generic Course" />
+        <button class="header__join-class-button">Entrar para próxima turma</button>
       </div>
     </header>
     <main>
       <!-- ====== Section Banner ====== -->
-      <section>
-        <div>
-          <h1>Desenvolvendo <span>suas</span> próximas habilidades</h1>
-          <p>
+      <section id="banner">
+        <div class="banner__container">
+          <h1 class="banner__title">Desenvolvendo <span class="banner__span">suas</span> próximas habilidades</h1>
+          <p class="banner__paragraph">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s
           </p>
-          <button>Sobre nós</button>
+          <button class="banner__button">Sobre nós</button>
         </div>
       </section>
 
       <!-- ====== Section About ====== -->
-      <section>
-        <div>
-          <h2>Quem somos nós?</h2>
-          <p>
+      <section id="about">
+        <div class="about__container">
+          <h2 class="about__title">Quem somos nós?</h2>
+          <p class="about__paragraph">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
@@ -41,26 +43,26 @@
       </section>
 
       <!-- ====== Section FAQ ====== -->
-      <section>
-        <div>
+      <section id="faq">
+        <div class="faq__container">
           <!-- LEFT SIDE -->
-          <div>
-            <div>
+          <div class="faq__left-side">
+            <div class="faq__left-side-container">
               <h2>Dúvidas frequentes</h2>
-              <p>
+              <p class="question__paragraph">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s
               </p>
-              <button>Entrar para próxima turma</button>
+              <button class="faq__join-class-button">Entrar para próxima turma</button>
             </div>
           </div>
           <!-- RIGHT SIDE -->
-          <ul>
+          <ul class="faq__list">
             <!-- Question 1 -->
-            <li>
-              <h3>Quais matérias vou pagar?</h3>
-              <p>
+            <li class="list__question">
+              <h3 class="question__title">Quais matérias vou pagar?</h3>
+              <p class="question__paragraph">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -68,9 +70,9 @@
               </p>
             </li>
             <!-- Question 2 -->
-            <li>
-              <h3>Tenho direito à cancelamento?</h3>
-              <p>
+            <li class="list__question">
+              <h3 class="question__title">Tenho direito à cancelamento?</h3>
+              <p class="question__paragraph">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -78,9 +80,9 @@
               </p>
             </li>
             <!-- Question 3 -->
-            <li>
-              <h3>O acesso do curso é vitalício?</h3>
-              <p>
+            <li class="list__question">
+              <h3 class="question__title">O acesso do curso é vitalício?</h3>
+              <p class="question__paragraph">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -88,9 +90,9 @@
               </p>
             </li>
             <!-- Question 4 -->
-            <li>
-              <h3>O acesso do curso é vitalício?</h3>
-              <p>
+            <li class="list__question">
+              <h3 class="question__title">O acesso do curso é vitalício?</h3>
+              <p class="question__paragraph">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -102,13 +104,13 @@
       </section>
 
       <!-- ====== Section Comments ====== -->
-      <section>
-        <div>
+      <section id="comments">
+        <div class="comments__container">
           <!-- RIGHT SIDE -->
-          <div>
-            <div>
-              <h2>O que nossos alunos comentam?</h2>
-              <p>
+          <div class="comments__right-side">
+            <div class="comments__right-side-container">
+              <h2 class="comments__right-side-title">O que nossos alunos comentam?</h2>
+              <p class="comments__right-side-paragraph">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s
@@ -116,14 +118,14 @@
             </div>
           </div>
           <!-- LEFT SIDE -->
-          <ul>
+          <ul class="comments__comment-list">
             <!-- Comment 1 -->
-            <li>
-              <div>
-                <h3>Júlia Lima</h3>
-                <p>Aluna na turma 2019</p>
+            <li class="comment-list__comment">
+              <div class="comment__comment-top">
+                <h3 class="comment-top__title">Júlia Lima</h3>
+                <p class="comment-top__paragraph">Aluna na turma 2019</p>
               </div>
-              <p>
+              <p class="comment__paragraph">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -131,12 +133,12 @@
               </p>
             </li>
             <!-- Comment 2 -->
-            <li>
-              <div>
-                <h3>Carlos Ino</h3>
-                <p>Aluno na turma 2020</p>
+            <li class="comment-list__comment">
+              <div class="comment__comment-top">
+                <h3 class="comment-top__title">Carlos Ino</h3>
+                <p class="comment-top__paragraph">Aluno na turma 2020</p>
               </div>
-              <p>
+              <p class="comment__paragraph">
                 It is a 🎨 established fact that a reader will be distracted by
                 the readable content of a page when looking at its layout. The
                 point of using Lorem Ipsum is that it has a more-or-less normal
@@ -144,12 +146,12 @@
               </p>
             </li>
             <!-- Comment 3 -->
-            <li>
-              <div>
-                <h3>Camila Dias</h3>
-                <p>Aluna na turma 2019</p>
+            <li class="comment-list__comment">
+              <div class="comment__comment-top">
+                <h3 class="comment-top__title">Camila Dias</h3>
+                <p class="comment-top__paragraph">Aluna na turma 2019</p>
               </div>
-              <p>
+              <p class="comment__paragraph">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -157,12 +159,12 @@
               </p>
             </li>
             <!-- Comment 4 -->
-            <li>
-              <div>
-                <h3>João Vaz</h3>
-                <p>Aluno na turma 2019</p>
+            <li class="comment-list__comment">
+              <div class="comment__comment-top">
+                <h3 class="comment-top__title">João Vaz</h3>
+                <p class="comment-top__paragraph">Aluno na turma 2019</p>
               </div>
-              <p>
+              <p class="comment__paragraph">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -170,12 +172,12 @@
               </p>
             </li>
             <!-- Comment 5 -->
-            <li>
-              <div>
-                <h3>Gio Oliveira</h3>
-                <p>Aluna na turma 2019</p>
+            <li class="comment-list__comment">
+              <div class="comment__comment-top">
+                <h3 class="comment-top__title">Gio Oliveira</h3>
+                <p class="comment-top__paragraph">Aluna na turma 2019</p>
               </div>
-              <p>
+              <p class="comment__paragraph">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -188,8 +190,8 @@
     </main>
 
     <!-- ====== Footer ====== -->
-    <footer>
-      <img src="" alt="" />
+    <footer id="footer">
+      <img class="footer__logo" src="/src/assets/logo.svg" alt="Logo Generic Course" />
     </footer>
 
     <!-- ====== Modal ====== -->
