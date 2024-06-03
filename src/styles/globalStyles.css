@@ -1,3 +1,4 @@
+@import url("/src/styles/reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
@@ -12,15 +13,30 @@
   --gray-color-6: #edf2ff;
   --gray-color-7: #f8f9fa;
 
-  --title1-font-size: 3.25rem;
-  --title2-font-size: 2.5rem;
-  --title3-font-size: 2rem;
+  --title-1-font-size: 3.25rem;
+  --title-2-font-size: 2.5rem;
+  --title-3-font-size: 2rem;
+  --button-font-size: 1rem;
+  --text-1-font-size: 1.25rem;
+  --text-2-font-size: 1.125rem;
+  --text-3-font-size: 1rem;
 
   --title-weight: 600;
   --text-1-to-3-weight: 400;
-  --text4-weight: 600;
+  --text-4-weight: 600;
+  --button-weight: 600;
+
+  --container-width: 78.5rem;
+  --container-padding: 5.125rem;
+  --container-gap: 3.5rem;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
+  /* max-width: 1728px; */
+  background-color: var(--gray-color-2);
+}
+
+button{
+    font-family: inherit;
 }

@@ -1,0 +1,30 @@
+#about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-color-1);
+  padding-block: var(--container-padding);
+}
+
+.about__container {
+  width: var(--container-width);
+  display: flex;
+  gap: var(--container-gap);
+  align-items: center;
+}
+
+.about__title {
+  width: 50%;
+  color: var(--gray-color-6);
+  font-size: var(--title-2-font-size);
+  font-weight: var(--title-weight);
+}
+
+.about__paragraph {
+  width: 50%;
+  color: var(--gray-color-5);
+  font-size: var(--text-1-font-size);
+  line-height: 1.875rem;
+  text-align: justify;
+}

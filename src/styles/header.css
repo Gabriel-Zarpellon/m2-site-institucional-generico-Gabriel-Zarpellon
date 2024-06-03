@@ -1,0 +1,31 @@
+#header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-color-1);
+  border-bottom: 0.125rem solid var(--brand-color-1);
+  padding-block: 1.25rem;
+}
+
+.header__container {
+  width: var(--container-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 12.5rem;
+  height: 1.3rem;
+}
+
+.header__join-class-button {
+  font-size: var(--button-font-size);
+  font-weight: var(--button-weight);
+  color: var(--gray-color-7);
+
+  background-color: var(--gray-color-1);
+  border: 0.0625rem solid var(--gray-color-7);
+  padding: 1.25rem 2rem;
+}
