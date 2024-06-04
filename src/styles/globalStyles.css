@@ -34,10 +34,38 @@
 }
 
 body {
+  width: 100%;
   font-family: "Inter", sans-serif;
   background-color: var(--gray-color-2);
 }
 
 button {
   font-family: inherit;
+}
+
+
+@media (max-width: 1024px) {
+
+  .header__container,
+  .banner__container,
+  .about__container,
+  .faq__container,
+  .comments__container {
+    max-width: 100%;
+  }
+
+  .comment-list__comment{
+    flex-direction: column;
+  }
+  
+  .comment__comment-top{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .comment__paragraph{
+    width: 100% !important;
+  }
 }

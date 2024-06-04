@@ -6,9 +6,9 @@
   background-color: var(--gray-color-1);
   border-bottom: 0.125rem solid var(--brand-color-1);
   padding-block: 1.25rem;
-
   position: fixed;
   z-index: 1;
+  max-width: 100%;
 }
 
 .header__container {
@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-inline: 1.875rem;
 }
 
 .header__logo {

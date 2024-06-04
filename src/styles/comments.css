@@ -12,6 +12,7 @@
   flex-direction: row-reverse;
   justify-content: center;
   gap: var(--container-gap);
+  margin-inline: 1.875rem;
 }
 
 .comments__right-side {
@@ -57,13 +58,15 @@
 }
 
 .comment-list__comment {
+  border: 2px solid red;
+  width: 100%;
   display: flex;
-  justify-content: center;
   gap: 1rem;
 }
 
 .comment__comment-top {
-  width: 40%;
+  border: 1px solid green;
+  width: 36%;
 }
 
 .comment-top__title {
@@ -80,7 +83,8 @@
 }
 
 .comment__paragraph {
-  width: 67%;
+  border: 1px solid blue;
+  width: 64%;
   color: var(--gray-color-5);
   font-size: var(--text-2-font-size);
   font-weight: var(--text-1-to-3-weight);
