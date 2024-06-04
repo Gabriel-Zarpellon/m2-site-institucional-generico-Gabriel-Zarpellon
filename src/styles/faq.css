@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block: var(--container-padding)
+  padding-block: var(--container-padding);
 }
 
 .faq__container {
@@ -15,7 +15,6 @@
 
 .faq__left-side {
   width: 50%;
- 
 }
 
 .faq__left-side-container {
@@ -43,7 +42,7 @@
   text-align: justify;
 }
 
-.faq__join-class-button {
+#faq__join-class-button {
   color: var(--gray-color-7);
   background-color: var(--brand-color-1);
   font-weight: var(--button-weight);
@@ -52,8 +51,9 @@
   padding: 1.25rem 2rem;
 }
 
-.faq__join-class-button:hover {
+#faq__join-class-button:hover {
   background-color: var(--brand-color-2);
+  cursor: pointer;
 }
 
 .faq__list {

@@ -13,6 +13,8 @@
   --gray-color-6: #edf2ff;
   --gray-color-7: #f8f9fa;
 
+  --input-focus-outline: 0.0625rem solid #9747ff;
+
   --title-1-font-size: 3.25rem;
   --title-2-font-size: 2.5rem;
   --title-3-font-size: 2rem;
@@ -36,6 +38,6 @@ body {
   background-color: var(--gray-color-2);
 }
 
-button{
-    font-family: inherit;
+button {
+  font-family: inherit;
 }
