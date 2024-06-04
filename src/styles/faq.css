@@ -15,6 +15,7 @@
 
 .faq__left-side {
   width: 50%;
+ 
 }
 
 .faq__left-side-container {
@@ -23,6 +24,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 2.06rem;
+
+  position: sticky;
+  top: 10.625rem;
 }
 
 .faq__left-side-title {

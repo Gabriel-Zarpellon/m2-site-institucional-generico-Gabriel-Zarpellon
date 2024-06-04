@@ -28,6 +28,9 @@
   background-color: var(--brand-color-1);
   padding: 5.4rem 3.25rem;
   gap: 2.1875rem;
+
+  position: sticky;
+  top: 10.625rem;
 }
 
 .comments__right-side-title {
