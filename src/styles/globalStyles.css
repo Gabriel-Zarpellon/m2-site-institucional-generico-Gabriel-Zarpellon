@@ -1,5 +1,12 @@
 @import url("/src/styles/reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("/src/styles/header.css");
+@import url("/src/styles/banner.css");
+@import url("/src/styles/about.css");
+@import url("/src/styles/faq.css");
+@import url("/src/styles/comments.css");
+@import url("/src/styles/footer.css");
+@import url("/src/styles/modal.css");
 
 :root {
   --brand-color-1: #4c6ef5;
@@ -15,13 +22,13 @@
 
   --input-focus-outline: 0.0625rem solid #9747ff;
 
-  --title-1-font-size: 3.25rem;
-  --title-2-font-size: 2.5rem;
-  --title-3-font-size: 2rem;
-  --button-font-size: 1rem;
-  --text-1-font-size: 1.25rem;
-  --text-2-font-size: 1.125rem;
-  --text-3-font-size: 1rem;
+  --title-1-font-size: clamp(3rem, 2.821rem + 0.476vw, 3.25rem);
+  --title-2-font-size: clamp(1.625rem, 2.071rem + 0.476vw, 2.5rem);
+  --title-3-font-size: clamp(1.25rem, 1.571rem + 0.476vw, 2rem);
+  --button-font-size: clamp(0.75rem, 0.571rem + 0.476vw, 1rem);
+  --text-1-font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+  --text-2-font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
+  --text-3-font-size: clamp(0.75rem, 0.571rem + 0.476vw, 1rem);
 
   --title-weight: 600;
   --text-1-to-3-weight: 400;
@@ -31,10 +38,10 @@
   --container-width: 78.5rem;
   --container-padding: 5.125rem;
   --container-gap: 3.5rem;
+  --container-margin-inline: 1.875rem;
 }
 
 body {
-  width: 100%;
   font-family: "Inter", sans-serif;
   background-color: var(--gray-color-2);
 }
@@ -43,29 +50,143 @@ button {
   font-family: inherit;
 }
 
+button:hover{
+  cursor: pointer;
+}
 
 @media (max-width: 1024px) {
-
   .header__container,
   .banner__container,
   .about__container,
   .faq__container,
   .comments__container {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 
-  .comment-list__comment{
+  .comment-list__comment {
     flex-direction: column;
   }
-  
-  .comment__comment-top{
+
+  .comment__comment-top {
     width: 100% !important;
     display: flex;
     align-items: center;
     gap: 1.25rem;
   }
 
-  .comment__paragraph{
+  .comment__paragraph {
     width: 100% !important;
+  }
+
+  .comments__right-side {
+    padding-left: 0 !important;
+  }
+
+  .comments__right-side-container {
+    margin-inline: 0 !important;
+    height: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__container {
+    flex-direction: column;
+  }
+
+  .about__title {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .about__paragraph {
+    width: 100% !important;
+  }
+
+  .faq__container {
+    flex-direction: column;
+  }
+
+  .faq__left-side {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .faq__left-side-container {
+    width: 100% !important;
+  }
+
+  #faq__join-class-button {
+    width: 100% !important;
+  }
+
+  .faq__list {
+    width: 100% !important;
+  }
+
+  .comments__container {
+    flex-direction: column !important;
+  }
+
+  .comments__right-side {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .comments__right-side-container {
+    width: 85% !important;
+    position: static !important;
+  }
+
+  .comments__comment-list {
+    width: 100% !important;
+  }
+
+  .comment-list__comment {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 425px) {
+  #header__join-class-button {
+    display: none;
+  }
+
+  #banner {
+    padding-block: 9.375rem 6.25rem !important;
+  }
+
+  #faq {
+    padding-bottom: 2.5625rem !important;
+  }
+
+  .faq__container {
+    margin-inline: 0.9375rem !important;
+  }
+
+  .question__title {
+    max-width: 100%;
+    text-align: center;
+    font-size: 22px !important;
+  }
+
+  .comments__comment-list {
+    gap: 1.875rem !important;
+  }
+
+  .comments__container {
+    margin-inline: 0.9375rem !important;
+  }
+
+  .comments__right-side-container {
+    width: 73% !important;
+  }
+
+  .comments__right-side-title {
+    font-size: 26px !important;
+    line-height: 2.5rem !important;
+  }
+
+  #modal {
+    width: 22.1875rem !important;
   }
 }

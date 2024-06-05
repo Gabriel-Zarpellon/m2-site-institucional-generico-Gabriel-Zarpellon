@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-inline: 1.875rem;
+  margin-inline: var(--container-margin-inline);
 }
 
 .header__logo {
@@ -32,8 +32,4 @@
   background-color: var(--gray-color-1);
   border: 0.0625rem solid var(--gray-color-7);
   padding: 1.25rem 2rem;
-}
-
-#header__join-class-button:hover{
-  cursor: pointer;
 }

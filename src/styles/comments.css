@@ -29,6 +29,7 @@
   background-color: var(--brand-color-1);
   padding: 5.4rem 3.25rem;
   gap: 2.1875rem;
+  margin-inline: var(--container-margin-inline);
 
   position: sticky;
   top: 10.625rem;
@@ -58,14 +59,12 @@
 }
 
 .comment-list__comment {
-  border: 2px solid red;
   width: 100%;
   display: flex;
   gap: 1rem;
 }
 
 .comment__comment-top {
-  border: 1px solid green;
   width: 36%;
 }
 
@@ -83,7 +82,6 @@
 }
 
 .comment__paragraph {
-  border: 1px solid blue;
   width: 64%;
   color: var(--gray-color-5);
   font-size: var(--text-2-font-size);

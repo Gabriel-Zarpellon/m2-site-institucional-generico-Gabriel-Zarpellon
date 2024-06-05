@@ -7,14 +7,13 @@
 }
 
 .banner__container {
-  border: 2px solid green;
   width: var(--container-width);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 2.75rem;
-  margin-inline: 1.875rem;
+  margin-inline: var(--container-margin-inline);
 }
 
 .banner__title {
@@ -27,22 +26,22 @@
   color: var(--brand-color-1);
 }
 
-.banner__paragraph{
-    color: var(--gray-color-4);
-    text-align: center;
-    line-height: 1.875rem;
-    font-size: var(--text-1-font-size);
+.banner__paragraph {
+  color: var(--gray-color-4);
+  text-align: center;
+  line-height: 1.875rem;
+  font-size: var(--text-1-font-size);
 }
 
-.banner__button{
-    background-color: var(--brand-color-1);
-    color: var(--gray-color-7);
-    font-size: var(--button-font-size);
-    font-weight: var(--button-weight);
-    border-style: none;
-    padding: 1.25rem 2rem;
+.banner__button {
+  background-color: var(--brand-color-1);
+  color: var(--gray-color-7);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-weight);
+  border-style: none;
+  padding: 1.25rem 2rem;
 }
 
-.banner__button:hover{
-    background-color: var(--brand-color-2);
+.banner__button:hover {
+  background-color: var(--brand-color-2);
 }
