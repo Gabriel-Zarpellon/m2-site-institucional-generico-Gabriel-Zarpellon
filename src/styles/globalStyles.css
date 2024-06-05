@@ -1,7 +1,6 @@
 @import url("/src/styles/reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-
 :root {
   --brand-color-1: #4c6ef5;
   --brand-color-2: #364fc7;
@@ -58,6 +57,18 @@ button:hover {
     max-width: 100% !important;
   }
 
+  .faq__left-side-title {
+    font-size: 2.25rem !important;
+  }
+
+  .question__title {
+    font-size: 1.625rem !important;
+  }
+
+  .comments__comment-list {
+    gap: 3.4375rem !important;
+  }
+
   .comment-list__comment {
     flex-direction: column;
   }
@@ -69,6 +80,10 @@ button:hover {
     gap: 1.25rem;
   }
 
+  .comment-top__title {
+    font-size: 1.625rem !important;
+  }
+
   .comment__paragraph {
     width: 100% !important;
   }
@@ -77,7 +92,7 @@ button:hover {
     padding-left: 0 !important;
   }
 
-  .comments__right-side-title{
+  .comments__right-side-title {
     font-size: 1.875rem !important;
   }
 
