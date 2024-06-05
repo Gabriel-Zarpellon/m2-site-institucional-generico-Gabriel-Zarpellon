@@ -77,6 +77,10 @@ button:hover {
     padding-left: 0 !important;
   }
 
+  .comments__right-side-title{
+    font-size: 1.875rem !important;
+  }
+
   .comments__right-side-container {
     margin-inline: 0 !important;
     height: 20%;
