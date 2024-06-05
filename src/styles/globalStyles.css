@@ -38,6 +38,7 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--gray-color-2);
+  margin: 0;
 }
 
 button {
